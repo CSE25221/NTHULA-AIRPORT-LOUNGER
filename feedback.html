@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookings & Feedback | Thari Cultural Lounge</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-info" href="index.html">Thari Lounge</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="culture.html">The Culture</a></li>
+                    <li class="nav-item"><a class="nav-link" href="menu.html">Cuisine Menu</a></li>
+                    <li class="nav-item"><a class="nav-link" href="directions.html">Find Us</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="feedback.html">Book & Review</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="bg-secondary text-white text-center py-4 mb-5" style="background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('images/lounge-interior.jpg') no-repeat center center/cover;">
+        <div class="container">
+            <h1 class="fw-bold">Lounge Reservations & Guest Feedback</h1>
+            <p class="lead">Book a stopover or share your cultural experience with us.</p>
+        </div>
+    </header>
+
+    <main class="container my-5">
+        <div class="row justify-content-center">
+            <div class="col-md-8 col-lg-6">
+                <div class="card shadow border-0 p-4 rounded-3 bg-light">
+                    <h3 class="mb-4 text-center fw-bold text-dark">Guest Details</h3>
+                    
+                    <form class="row g-3 needs-validation" novalidate action="#" method="POST">
+                        
+                        <div class="col-12">
+                            <label for="validationCustom01" class="form-label fw-semibold">Full Name</label>
+                            <input type="text" class="form-control" id="validationCustom01" placeholder="e.g. John Doe" required>
+                            <div class="invalid-feedback">
+                                Please provide your full name as it appears on your passport.
+                            </div>
+                        </div>
+
+                        <div class="col-12">
+                            <label for="validationCustom02" class="form-label fw-semibold">Email Address</label>
+                            <input type="email" class="form-control" id="validationCustom02" placeholder="name@example.com" required>
+                            <div class="invalid-feedback">
+                                Please input a valid international email address for reservation alerts.
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <label for="validationCustom03" class="form-label fw-semibold">Country of Origin</label>
+                            <select class="form-select" id="validationCustom03" required>
+                                <option selected disabled value="">Choose...</option>
+                                <option value="Botswana">Botswana</option>
+                                <option value="South Africa">South Africa</option>
+                                <option value="United Kingdom">United Kingdom</option>
+                                <option value="United States">United States</option>
+                                <option value="Germany">Germany</option>
+                                <option value="Other">Other (International)</option>
+                            </select>
+                            <div class="invalid-feedback">
+                                Please select your home country.
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <label for="validationCustom04" class="form-label fw-semibold">Purpose of Visit</label>
+                            <select class="form-select" id="validationCustom04" required>
+                                <option selected disabled value="">Select reason...</option>
+                                <option value="Leisure">Holiday / Tourism</option>
+                                <option value="Business">Business Transit</option>
+                                <option value="Flight Crew">Flight Crew Layover</option>
+                            </select>
+                            <div class="invalid-feedback">
+                                Please specify your travel profile.
+                            </div>
+                        </div>
+
+                        <div class="col-12 my-3">
+                            <label class="form-label d-block fw-semibold">Which cultural element are you booking for?</label>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="featureRadio" id="inlineRadio1" value="Cuisine" required>
+                                <label class="form-check-label" for="inlineRadio1">Traditional Cuisine (Seswaa)</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="featureRadio" id="inlineRadio2" value="Music" required>
+                                <label class="form-check-label" for="inlineRadio2">Live Traditional Music</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="featureRadio" id="inlineRadio3" value="Crafts" required>
+                                <label class="form-check-label" for="inlineRadio3">Basketry & Local Art Displays</label>
+                            </div>
+                        </div>
+
+                        <div class="col-12">
+                            <label for="validationCustom05" class="form-label fw-semibold">Special Requests / Feedback Review</label>
+                            <textarea class="form-control" id="validationCustom05" rows="4" placeholder="Tell us about your flight timings or any dietary requirements..." required></textarea>
+                            <div class="invalid-feedback">
+                                Please write a short message or state your booking constraints.
+                            </div>
+                        </div>
+
+                        <div class="col-12">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                                <label class="form-check-label text-muted small" for="invalidCheck">
+                                    I certify that I am booking a space matching my Gaborone airport arrival or departure timeline.
+                                </label>
+                                <div class="invalid-feedback">
+                                    You must accept the timeline confirmation box before submitting.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 text-center mt-4">
+                            <button class="btn btn-info text-white w-100 fw-bold py-2 shadow-sm" type="submit">Submit Booking / Review</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-dark text-light text-center py-4 mt-5">
+        <p class="mb-0">&copy; 2026 Thari Cultural Lounge. All Rights Reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        (() => {
+            'use strict'
+            // Fetch all the forms we want to apply custom Bootstrap validation styles to
+            const forms = document.querySelectorAll('.needs-validation')
+
+            // Loop over them and prevent submission upon invalid field detection
+            Array.from(forms).forEach(form => {
+                form.addEventListener('submit', event => {
+                    if (!form.checkValidity()) {
+                        event.preventDefault()
+                        event.stopPropagation()
+                    }
+                    form.classList.add('was-validated')
+                }, false)
+            })
+        })()
+    </script>
+</body>
+</html>
